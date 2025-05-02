@@ -21,19 +21,31 @@ function chamarAnunciante() {
   // Dados de exemplo de pets
 const pets = [
   {
-    imagem: "/images/bc.jpg",
+    imagem: "/petfinder/images/bc.jpg",
     nome: "Bolinha",
-    descricao: "Raça: Border Collie | Cor: Preto e Branco | Última vez visto em: Rua das Flores, 123 - Bairro Jardim."
+    anunciante: "Miguel",
+    tipo: "Encontrado",
+    raca: "Border Collie",
+    cor: "Preto e Branco",
+    ultimaloc: "Rua das Flores, 123 - Bairro Jardim"
   },
   {
-    imagem: "/images/golden.jpg",
+    imagem: "/petfinder/images/golden.jpg",
     nome: "Rex",
-    descricao: "Raça: Golden | Cor: Dourado | Última vez visto em: Av. Central, 456 - Bairro Lagoa."
+    anunciante: "Pedro",
+    tipo: "Desaparecido",
+    raca: "Golden",
+    cor: "Dourado",
+    ultimaloc: "Rua Central, 456 - Bairro Lagoa."
   },
   {
-    imagem: "/images/akita.jpg",
+    imagem: "/petfinder/images/akita.jpg",
     nome: "Mimi",
-    descricao: "Raça: Akita | Cor: Branco | Última vez visto em: Praça dos Sonhos, 789."
+    anunciante: "Thiago",
+    tipo: "Encontrado",
+    raca: "Akita",
+    cor: "Branco",
+    ultimaloc: "Praça dos Sonhos, 789."
   }
 ];
 
@@ -53,5 +65,9 @@ function atualizarPet() {
   const pet = pets[petAtual];
   document.getElementById("petImage").src = pet.imagem;
   document.getElementById("petName").textContent = "Nome: " + pet.nome;
-  document.getElementById("petDescription").textContent = pet.descricao;
+  document.getElementById("anunciante").textContent = "Anunciante: " + pet.anunciante;
+  document.getElementById("tipo").textContent = "Tipo: " + pet.tipo;
+  document.getElementById("raca").textContent = "Raça: " + pet.raca;
+  document.getElementById("cor").textContent = "Cor: " + pet.cor;
+  document.getElementById("ultimaloc").textContent = "Última vez visto em: " + pet.ultimaloc;
 }

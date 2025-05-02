@@ -69,3 +69,15 @@ body {
     flex-direction: column;
   }
 }
+.img-container {
+  height: 10px;
+  overflow: hidden;
+}
+
+.img-container img {
+  width: 10%;
+  height: 10%;
+  object-fit: cover;
+}
+
+
